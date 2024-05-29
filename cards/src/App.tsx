@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 import felix from "./images/felix.png"
 import mrwhiskerson from "./images/mr-whiskerson.png"
 import phoneicon from "./images/phone-icon.png"
@@ -17,58 +18,17 @@ import pumpkin from "./images/pumpkin.png"
 function App() {
   return (
     <div className="contacts">
+      <Contact img="./images/mr-whiskerson.png" name="Mr. Whiskerson"
+        phone="(212) 555-1234" email="mr.whiskaz@catnap.meow" />
 
-      <div className="contact-card">
-        <img src={mrwhiskerson} />
-        <h3>Mr. Whiskerson</h3>
-        <div className="info-group">
-          <img src={phoneicon} />
-          <p>(212) 555-1234</p>
-        </div>
-        <div className="info-group">
-          <img src={mailicon} />
-          <p>mr.whiskaz@catnap.meow</p>
-        </div>
-      </div>
+      <Contact img="./images/fluffykins.png" name="Fluffykins"
+        phone="212) 555-2345" email="fluff@me.com" />
 
-      <div className="contact-card">
-        <img src={fluffykins} />
-        <h3>Fluffykins</h3>
-        <div className="info-group">
-          <img src={phoneicon} />
-          <p>(212) 555-2345</p>
-        </div>
-        <div className="info-group">
-          <img src={mailicon} />
-          <p>fluff@me.com</p>
-        </div>
-      </div>
+      <Contact img="./images/felix.png" name="Mr. Whiskerson"
+        phone="(212) 555-1234" email="thecat@hotmail.com" />
 
-      <div className="contact-card">
-        <img src={felix} />
-        <h3>Felix</h3>
-        <div className="info-group">
-          <img src={phoneicon} />
-          <p>(212) 555-4567</p>
-        </div>
-        <div className="info-group">
-          <img src={mailicon} />
-          <p>thecat@hotmail.com</p>
-        </div>
-      </div>
-
-      <div className="contact-card">
-        <img src={pumpkin} />
-        <h3>Pumpkin</h3>
-        <div className="info-group">
-          <img src={phoneicon} />
-          <p>(0800) CAT KING</p>
-        </div>
-        <div className="info-group">
-          <img src={mailicon} />
-          <p>pumpkin@scrimba.com</p>
-        </div>
-      </div>
+      <Contact img="./images/pumpkin.png" name="Pumpkin"
+        phone="(0800) CAT KING" email="pumpkin@scrimba.com" />
 
     </div>
   )
